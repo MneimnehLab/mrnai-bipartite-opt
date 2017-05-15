@@ -1,7 +1,5 @@
-sampler_v2.0/build
-sampler_v2.0/logs
-sampler_v2.0/analysis/logs
-sampler_v2.0/data/trash
+build
+_trash
 *.out
 *.dump
 *.zip
