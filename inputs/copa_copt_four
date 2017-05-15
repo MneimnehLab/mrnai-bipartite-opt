@@ -1,0 +1,25 @@
+CGGUUUAAGUGGGCCCCGGUAAUCUUUUCGUACUCGCC&AAAGUUGAAGAAGAUUAUCGGGGUUUUUGCUU&AAGCAAAAACCCCGAUAAUCUUCUUCAACUUU&GGCGAGUACGAAAAGAUUACCGGGGCCCACUUAAACCG
+one&two&three&four
+0,2|1,3
+
+
+
+
+
+
+
+
+
+
+
+Before splitting:
+
+CGGUUUAAGUGG----------GCCCCGGUAAUCUU------------UUCGUACUCGCC
+||||||||||||          ||||||||||||||            |||||||||||| 
+||||||||||||  UUCGUUUUUGGGGCUAUUAGAAGAAGUUGAAA  ||||||||||||
+||||||||||||  ||||||||              ||||||||||  ||||||||||||
+||||||||||||  AAGCAAAAACCCCGAUAAUCUUCUUCAACUUU  ||||||||||||
+||||||||||||           |||||*|||||||            ||||||||||||
+GCCAAAUUCACC----------CGGGGCCAUUAGAA------------AAGCAUGAGCGG
+
+

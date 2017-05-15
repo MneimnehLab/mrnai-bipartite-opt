@@ -1,0 +1,29 @@
+backtrack:  H[38][99][38] , between I & J win=[36,38] & [97,99]
+ backtrack:  H[13][85][38] , between I & J win=[11,13] & [83,85]
+ backtrack:  H[7][50][38] , between K & J win=[46,50] & [34,38]
+ backtrack:  H[7][35][34] , between K & J win=[32,35] & [31,34]
+ backtrack:  H[7][28][8] , between I & J win=[3,7] & [24,28]
+ backtrack:  H[3][23][8] , between K & J win=[18,23] & [3,8]
+ backtrack:  H[3][11][1] , between I & J win=[2,3] & [10,11]
+
+ 
+ 
+ 
+ backtrack:  H[38][99][38] , between I & J win=[36,38] & [97,99]
+ backtrack:  H[13][85][38] , between I & J win=[11,13] & [83,85]
+ backtrack:  H[7][50][38] , between K & J win=[46,50] & [34,38]
+ backtrack:  H[7][35][34] , between K & J win=[32,35] & [31,34]
+ backtrack:  H[7][28][8] , between I & J win=[3,7] & [24,28]
+ backtrack:  H[3][23][8] , between K & J win=[18,23] & [3,8]
+ backtrack:  H[3][11][1] , between I & J win=[2,3] & [10,11]
+
+
+ 
+ 
+ backtrack:  38,99,38, between rna 0 & rna 1,  win=[36,38] & [97,38]
+ backtrack:  13,85,38, between rna 0 & rna 1,  win=[11,13] & [83,13]
+ backtrack:  7,50,38, between rna 1 & rna 2,  win=[46,50] & [34,50]
+ backtrack:  7,35,34, between rna 1 & rna 2,  win=[32,35] & [31,35]
+ backtrack:  7,28,8, between rna 0 & rna 1,  win=[3,7] & [24,7]
+ backtrack:  3,23,8, between rna 1 & rna 2,  win=[18,23] & [3,23]
+ backtrack:  3,11,1, between rna 0 & rna 1,  win=[2,3] & [10,3]

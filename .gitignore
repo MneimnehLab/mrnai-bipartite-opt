@@ -1,0 +1,9 @@
+sampler_v2.0/build
+sampler_v2.0/logs
+sampler_v2.0/analysis/logs
+sampler_v2.0/data/trash
+*.out
+*.dump
+*.zip
+*.pyc
+.DS_Store

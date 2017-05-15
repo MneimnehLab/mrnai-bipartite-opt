@@ -1,0 +1,21 @@
+MutliFold RNA sequences:
+
+
+
+1 Conventional hairpin ribozyme HP-WT with wild-type sequence (Figure 1(a)20) 15, 31, 21 0.95 0.77 K24.60 
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC102578/pdf/gkd195.pdf
+
+2 Reverse-joined hairpin ribozyme HP-RJ derived from HP-WT (Figure 1(b)20) 15, 17, 37 0.95 0.90 K19.40 
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC102578/pdf/gkd195.pdf
+
+3 Four-way junction construct of a hairpin ribozyme (Figure 1(b)34) 33, 29, 20, 24 0.95 0.87 K55.00 
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC125305/pdf/cde608.pdf
+
+4 Hammerhead ribozyme with HTF substrate and facilitators (Figure 1(a)35) 13, 38, 12, 36 0.93 1.00 K55.20 
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC145664/pdf/240423.pdf
+
+5 Hammerhead ribozyme with IFB substrate and facilitators (Figure 1(b)35) 13, 38, 12, 36 0.93 1.00 K56.60
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC145664/pdf/240423.pdf
+
+Another:
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2151026/pdf/55.pdf
