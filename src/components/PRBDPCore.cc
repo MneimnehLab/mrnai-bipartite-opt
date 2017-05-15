@@ -44,17 +44,16 @@ void PRBDPCore::initLinear(int num)
     for(int i=0;i<totalLevels;i++)
         totalDimSize *= lengths[i];
     
-    H = MultiIndexArray<double>::CreateMultiIndexArray(lengths);
-    chosenByArr = MultiIndexArray<RNA_Pair>::CreateMultiIndexArray(lengths);
-    chosenW = MultiIndexArray<int>::CreateMultiIndexArray(lengths);
-    chosenW2 = MultiIndexArray<int>::CreateMultiIndexArray(lengths);
+    H           = MultiIndexArray<double>   ::CreateMultiIndexArray(lengths);
+    chosenByArr = MultiIndexArray<RNA_Pair> ::CreateMultiIndexArray(lengths);
+    chosenW1    = MultiIndexArray<int>      ::CreateMultiIndexArray(lengths);
+    chosenW2    = MultiIndexArray<int>      ::CreateMultiIndexArray(lengths);
 }
 
 
 
 void PRBDPCore::allForLoops()
 {
-
     auto begin = chrono::high_resolution_clock::now();  
 
     // recursion base cases
@@ -68,10 +67,8 @@ void PRBDPCore::allForLoops()
     cout << "totalDimSize = " << totalDimSize << endl;
     cout << "Completed: " << endl;
     for(int i=1;i<totalDimSize;i++)
-    {
-        
+    {   
         H.revHash(i, indices);
-        
         atStepH(i, indices);
         
         if(i % block == 0) 
@@ -80,7 +77,6 @@ void PRBDPCore::allForLoops()
             printf("%d %% .. ", percent); 
             fflush(stdout);
         };
-
     }
     cout << endl;
 
@@ -108,11 +104,7 @@ void PRBDPCore::allForLoops()
     auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(dur).count();
     
     cout << "Time after all H:" << (double)ms << "ms" << endl;
-
 }
-
-
-
 
 
 void PRBDPCore::atStepH(int theIndex, int * indices)
@@ -133,7 +125,6 @@ void PRBDPCore::atStepH(int theIndex, int * indices)
                 return;
             }
         
-      
         for(ci=0;ci<totalLevels;ci++)
             cout << indices[ci] << " ";
         cout << endl;
@@ -142,7 +133,6 @@ void PRBDPCore::atStepH(int theIndex, int * indices)
     double val, min = std::numeric_limits<double>::max();
     int argMinI, argMinW, argMinW2;
     RNA_Pair chosenBy = {-1, -1};
-
 
 
     // First part: move one peg on each level: 
@@ -156,8 +146,8 @@ void PRBDPCore::atStepH(int theIndex, int * indices)
             indices[i]++;
             continue;
         }
-        val = H[indices];
         
+        val = H[indices];
 
         if(val < min)
         {
@@ -235,12 +225,12 @@ void PRBDPCore::atStepH(int theIndex, int * indices)
     #endif
 
     H[theIndex] = min;
+
+    // for backtracking
     chosenByArr[theIndex] = chosenBy;
-    chosenW[theIndex] = argMinW;
-    chosenW2[theIndex] = argMinW2;
+    chosenW1   [theIndex] = argMinW;
+    chosenW2   [theIndex] = argMinW2;
 }
-
-
 
 
 void PRBDPCore::backtrackNR(int * indices)
@@ -265,7 +255,7 @@ void PRBDPCore::backtrackNR(int * indices)
         int eIndex = cb.even;
         int oIndex = cb.odd;
 
-        short w1 = chosenW[indices];
+        short w1 = chosenW1[indices];
         short w2 = chosenW2[indices];
 
         int currEvenPos = indices[eIndex];

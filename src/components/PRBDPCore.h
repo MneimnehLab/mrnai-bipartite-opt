@@ -32,10 +32,10 @@ private:
     int totalLevels;
 
 
-    //The following 3 arrays are linearized. indexed by l1,...,lk
+    //The following 4 arrays are linearized. indexed by l1,...,lk
     MultiIndexArray<double> H;              //The MAIN ARRAY. H.
     MultiIndexArray<RNA_Pair> chosenByArr;  //contains "chosen by" for backtracking
-    MultiIndexArray<int> chosenW;           //selected window size for backtracking
+    MultiIndexArray<int> chosenW1;          //selected window size for backtracking
     MultiIndexArray<int> chosenW2;          //selected window size rna2 for backtracking
 
     void backtrackNR(int * indices);
