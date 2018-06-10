@@ -10,4 +10,4 @@ fi
 
 head -n 3 $INPUT_FILE | rnaup_weights/weights_rnaup -gu 0
 build/complete -k 4 -gs 0  < $INPUT_FILE
-head -n 3 $INPUT_FILE | ./compile_bipartite_weights.py > output/compiled_bipartite_weights.out
+# head -n 3 $INPUT_FILE | ./compile_bipartite_weights.py > output/compiled_bipartite_weights.out

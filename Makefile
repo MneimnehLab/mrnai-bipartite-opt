@@ -33,7 +33,8 @@ all:
 	make $(PROG_NAME)
 	# make $(ALL_PERMS_PROG)
 	make $(CONVG_PROG)
-	# cd rnaup_weights/ && make
+	cd rnaup_weights/ && make
+	mkdir -p output
 
 $(PROG_NAME): $(ALL_OBJ) $(BUILD_DIR)/complete.o
 	$(CC) $(C++FLAGS) -o  $(BUILD_DIR)/$@ $(ALL_OBJ) $(BUILD_DIR)/complete.o
