@@ -22,3 +22,8 @@ Line 3: Comma-separated indices of even RNAs, followed by `|`, followed by comma
 Note that the indices of RNAs correspond to their ordering in line 1.
 
 The output will be a set of windows.
+
+As an example, try running
+```
+./bip-run.sh inputs/yeast_trunc
+```
