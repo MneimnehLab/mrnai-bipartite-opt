@@ -1,0 +1,13 @@
+typedef struct Node Node;
+typedef struct RowHead RowHead;
+Node * createRoot(int id);
+Node * createNode(int id, Node * parent);
+void printTree(Node * n);
+void set1();
+void set2();
+void printRow(int rowId);
+Node * getLastInRow(int rowId);
+void printSubset(int from, int to);
+int getLocationAsChild(Node * n);
+Node * getLastChild(Node * parent);
+SingleRunConfig *  generateSubsetConfig(int from, int to);
