@@ -19,7 +19,9 @@ An input file consists of at least 3 lines:
 Line 1: All RNA sequences, in 5' -> 3' direction, separated by `&`s.
 Line 2: Any names that you can use for the RNAs,  separated by `&`s.
 Line 3: Comma-separated indices of even RNAs, followed by `|`, followed by comma-separated indices of odd RNAs
+Line 4 and onwards: Optional meta data.
 Note that the indices of RNAs correspond to their ordering in line 1.
+
 
 The output will be a set of windows.
 
