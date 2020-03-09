@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-c -Wall -w 
-LDFLAGS=-ld
+LDFLAGS=-lm
 
 WEIGHTS_RNAUP_SOURCE = weights_rnaup.c
 
@@ -23,7 +23,7 @@ $(WEIGHTS_RNAUP_EXEC): $(RNAUP_OBJECTS) $(BY_BOTH_OBJECTS) $(WEIGHTS_RNAUP_OBJEC
 	$(CC) $(LDFLAGS)   $(RNAUP_OBJECTS) $(BY_BOTH_OBJECTS) $(WEIGHTS_RNAUP_OBJECTS) -o $@
 
 .cpp.o:
-	$(CC) $(CFLAGS) -ld $< -o $@
+	$(CC) $(CFLAGS) -lm $< -o $@
 	
 clean:
 	rm -f *.o
