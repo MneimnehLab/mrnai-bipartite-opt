@@ -3,7 +3,6 @@
 
 #include <string>
 #include <vector>
-using namespace std;
 
 #define MAX_RNA_SIZE 250
 #define MAX_NUM_RNA 10
@@ -12,7 +11,7 @@ using namespace std;
 typedef struct OrigRNASeq
 {
     int origId;
-    string string;
+    std::string string;
     int originalLength;
     std::string name;
     int type;
@@ -30,8 +29,8 @@ typedef struct CmdLineArgs
     int  gapSize;
     int  winSize;
     int  GU;
-    string rnaupOut;
-    string fileName;
+    std::string rnaupOut;
+    std::string fileName;
     bool loopAround;
 
     CmdLineArgs() 
