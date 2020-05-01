@@ -31,16 +31,36 @@ int main(int argc, char *argv[])
 
     // vector<int> ordering {0,-1,1,2,3};
     vector<int> ordering = randomEvenOddVector(numOfRNA);
-    vector<int> minOrder;
-    double minEnergy;
-    Config minEnergyConfig;
 
+    relabelSeqTypes(origRNASequences, ordering);
+        
+    RNAProperties props_(&weights, &origRNASequences);
+
+    PRBDPCore dpAlgo_(&props_); 
+
+    vector<int> minOrder = ordering;
+    double minEnergy = dpAlgo_.getMinEnergy();;
+    Config minEnergyConfig = dpAlgo_.getResultConfig();
+
+    cout << "Starting order: ";
+    for (int x : ordering) cout << x << ", ";
+        cout << endl;
+
+    cout << "starting config: " << minEnergyConfig << endl;
+    cout << "starting config energy: " << minEnergy << endl;
+    
     bool done = false;
 
     while(!done)
     {
+        cout << endl 
+             << "~~ New itertion of exploration ~~" << endl;
+        cout << "~~ this iteration's seed ordering: ";
+        for (int x : minOrder) cout << x << ",";
+        cout << endl;
+
         bool foundBetterStructure = false;
-        for(auto newOrdering : getNeighbors(ordering))
+        for(auto newOrdering : getNeighbors(minOrder))
         {
             cout << "New ordering: ";
             for(auto e : newOrdering)
@@ -160,4 +180,3 @@ vector<int> randomEvenOddVector(int num)
 
     return ordering;
 }
-
