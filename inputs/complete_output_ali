@@ -1,0 +1,680 @@
+Last login: Sat Sep 12 22:50:49 on console
+   _O_        _____         _<>_          ___
+ /     \     |     |      /      \      /  _  \
+|==/=\==|    |[/_\]|     |==\==/==|    |  / \  |
+|  O O  |    / O O \     |   ><   |    |  |"|  |
+ \  V  /    /\  -  /\  ,-\   ()   /-.   \  X  /
+ /`---'\     /`---'\   V( `-====-' )V   /`---'\
+ O'_:_`O     O'M|M`O   (_____:|_____)   O'_|_`O
+  -- --       -- --      ----  ----      -- --    -t. pruss
+
+(^_^)   (^_^)   (^_^)   (^_^)   (^_^)   (^_^)   (^_^)   (^_^)
+
+Alis-Macbook:~ aliahmed$ cd research/
+Alis-Macbook:research aliahmed$ ls
+07039281.pdf                                                  proposal
+Durbin-Et-Al-Biological-Sequence-Analysis-CUP-2002-No-OCR.pdf research
+bioinformatics_reviews.docx                                   research2
+cuny docs research                                            second exam
+git_repos                                                     symlnk_u6u2
+new-repos                                                     temp.xlsx
+oldthesis                                                     thesis
+pairwise_examples.xlsx                                        u6u2 collection.pdf
+Alis-Macbook:research aliahmed$ cd research2/
+Alis-Macbook:research2 aliahmed$ ls
+2009-11-16_UCR_CompSci.pdf   Our Papers_submitted         Talks                        alis_example                 oxys-fhla.jpg
+Actual Example               Papers                       Terminology                  compiled_yeast_trunc_weights oxys_fhla.gif
+Books                        Permutations                 Writeups                     cossmo                       rna bank
+Code                         RPI                          algo_results.txt             log_n_n_eps.py               test_deploy
+Comp Bio                     Saad's Lectures              algo_results.xlsx            mrnai-opt-documentation.docx u6u2.jpg
+Energy Models work           Second Shape                 algo_results2.xlsx           openProblems.pdf             yeast_trunc
+Alis-Macbook:research2 aliahmed$ cd ..
+Alis-Macbook:research aliahmed$ cd research
+Alis-Macbook:research aliahmed$ ls
+New Microsoft Office Excel Worksheet.xlsx mrnai-sampler                             rev2_w2_pirnapirna_out_3_0.dat
+RIsearch-1.0                              mrnai_website                             rev2_w2_pirnapirna_out_3_2.dat
+ViennaRNA-2.0.7                           myfiles.zip                               rev2_w2_prob
+ViennaRNA-2.0.7.tar.gz                    pirna-birna-3.6                           rev2_w2_py
+ViennaRNA-2.3.2                           pirna-mod                                 rev2_w2_test
+ViennaRNA-2.3.2.tar.gz                    pirna-mod-params                          rev2_w2aaa
+cmdutils                                  pirna_find_energy                         rev3
+contrafold_v1_10                          pirna_port                                rev3_w2
+contrafold_v2_00                          pkg.zip                                   rev4
+data                                      reader                                    rev5_cpp
+difff                                     replicator.py                             rnacofold
+do_constraint_folding.py                  results-0125.xlsx                         rnapdist
+examine_pirna                             rev2                                      rnaup
+examine_pirna - Copy                      rev2_max copy.zip                         rnaup_weights
+examine_pirna_birna                       rev2_max_2016Jan.zip                      run_subopt.sh
+gen_probs                                 rev2_new2017                              sampling
+interact                                  rev2_w2                                   sdiscovery
+interact.tar.gz                           rev2_w2 - Copy                            simple
+joint_prob                                rev2_w2.rar                               subopt-enumeration
+joint_prob2                               rev2_w2_20150102.zip                      subopt-mrnai-enumeration
+mrnai-bipartite-opt                       rev2_w2_birna                             subopt_structs.out
+mrnai-bipartite-opt-test                  rev2_w2_bnb                               suboptimal.zip
+mrnai-bipartite-opt.zip                   rev2_w2_clean                             susbtr_generator
+mrnai-bipartite-opt2                      rev2_w2_coax                              temp_for_copy
+mrnai-opt                                 rev2_w2_old                               two_arcs_partfunc
+mrnai-opt copy                            rev2_w2_pirna                             u6u2.jpg
+mrnai-opt.zip                             rev2_w2_pirnapirna_out_1_0.dat
+mrnai-opt2                                rev2_w2_pirnapirna_out_1_2.dat
+Alis-Macbook:research aliahmed$ cd ..
+Alis-Macbook:research aliahmed$ cd new-repos/
+Alis-Macbook:new-repos aliahmed$ ls
+mrnai-bipartite-opt mrnai-opt           mrnai-sampler
+Alis-Macbook:new-repos aliahmed$ cd mrnai-bipartite-opt/
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ls
+LICENSE                             build                               output                              run_allperms.sh
+Makefile                            compile_bipartite_weights.py        prototypes                          run_convg.sh
+README.md                           compile_bipartite_weights_linear.py rnaup_weights                       src
+bip-run.sh                          inputs                              run.sh
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ./run_convg.sh
+Usage:
+./run.sh   relative/path/to/sequences_in
+           [--wrap]
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ cd inputs/
+Alis-Macbook:inputs aliahmed$ ls
+MutliFold RNA sequences bad_cops                copa_copt_three         hprj                    test_4way
+U6U2                    burke                   ensg                    multi_seq               three_ribo
+alis_example            copa_copt               hairpin_ribo_2way       only_copa_split         yeast
+bacillus                copa_copt_four          hairpin_ribo_4way       oxys_fhla               yeast_trunc
+Alis-Macbook:inputs aliahmed$ cd ..
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ./run_convg.sh  yeast_trunc
+head: yeast_trunc: No such file or directory
+Using k = 2
+Using parallel = 0
+using trials  = 1
+using gaps  = 1
+Enter sequences: Enter names seperated by '&'
+./run_convg.sh: line 11: 73492 Exit 1                  head -n 3 $INPUT_FILE
+     73493 Segmentation fault: 11  | rnaup_weights/weights_rnaup -gu 1
+./run_convg.sh: line 12: yeast_trunc: No such file or directory
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ./run_convg.sh  inputs/yeast_trunc
+Using k = 2
+Using parallel = 0
+using trials  = 1
+using gaps  = 1
+Enter sequences: Enter names seperated by '&'
+DSDSDSDSEnter even|odd:
+0 name:     i1
+0 sequence: NNNNGUAUGUNNNN
+0 length:   14
+1 name:     u6
+1 sequence: NNNNACAGAGAUGAUCAGCNNNN
+1 length:   23
+2 name:     u2
+2 sequence: NNNNGCUUAGAUCAAGUGUAGUANNNN
+2 length:   27
+3 name:     i2
+3 sequence: NNNNUACUAACACCNNNN
+3 length:   18
+Computing matrix from RNAup....
+
+Pair even: 0 and odd: 1, num = 0
+Even name = i1
+Odd name = u6
+
+
+Pair even: 0 and odd: 2, num = 1
+Even name = i1
+Odd name = u2
+
+
+Pair even: 0 and odd: 3, num = 2
+Even name = i1
+Odd name = i2
+
+
+Pair even: 1 and odd: 0, num = 3
+Even name = u6
+Odd name = i1
+
+
+Pair even: 1 and odd: 2, num = 4
+Even name = u6
+Odd name = u2
+
+
+Pair even: 1 and odd: 3, num = 5
+Even name = u6
+Odd name = i2
+
+
+Pair even: 2 and odd: 0, num = 6
+Even name = u2
+Odd name = i1
+
+
+Pair even: 2 and odd: 1, num = 7
+Even name = u2
+Odd name = u6
+
+
+Pair even: 2 and odd: 3, num = 8
+Even name = u2
+Odd name = i2
+
+
+Pair even: 3 and odd: 0, num = 9
+Even name = i2
+Odd name = i1
+
+
+Pair even: 3 and odd: 1, num = 10
+Even name = i2
+Odd name = u6
+
+
+Pair even: 3 and odd: 2, num = 11
+Even name = i2
+Odd name = u2
+
+
+Have computed matching matrix
+Enter Sequences: Enter Names: Read weights from file....
+
+Read file output/default-0_1_itemized.out
+Read file output/default-0_2_itemized.out
+Read file output/default-0_3_itemized.out
+Read file output/default-1_0_itemized.out
+Read file output/default-1_2_itemized.out
+Read file output/default-1_3_itemized.out
+Read file output/default-2_0_itemized.out
+Read file output/default-2_1_itemized.out
+Read file output/default-2_3_itemized.out
+Read file output/default-3_0_itemized.out
+Read file output/default-3_1_itemized.out
+Read file output/default-3_2_itemized.out
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -6.67859
+Interaction b/w RNA 0 & 3 : [5,7] & [12,14]
+Interaction b/w RNA 1 & 2 : [17,19] & [21,23]
+Interaction b/w RNA 1 & 2 : [12,16] & [14,18]
+Interaction b/w RNA 1 & 2 : [5,7] & [9,11]
+Time after all H:924ms
+Starting order: 0, 1, -1, 2, 3,
+starting config: [(0, 3, 7, 14, 2, 2), (1, 2, 19, 23, 2, 2), (1, 2, 16, 18, 4, 4), (1, 2, 7, 11, 2, 2)]
+starting config energy: -6.67859
+
+~~ New itertion of exploration ~~
+~~ this iteration's seed ordering: 0,1,-1,2,3,
+New ordering: 2 -1 1 0 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -11.4442
+Interaction b/w RNA 2 & 3 : [16,23] & [6,14]
+Interaction b/w RNA 2 & 1 : [10,14] & [8,12]
+Interaction b/w RNA 2 & 1 : [5,7] & [5,7]
+Time after all H:976ms
+
+New ordering: 3 2 -1 1 0
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -6.67859
+Interaction b/w RNA 2 & 1 : [17,19] & [17,19]
+Interaction b/w RNA 2 & 1 : [10,14] & [8,12]
+Interaction b/w RNA 2 & 1 : [5,7] & [5,7]
+Interaction b/w RNA 3 & 0 : [5,7] & [8,10]
+Time after all H:1012ms
+
+New ordering: 0 -1 1 2 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -0.897325
+Interaction b/w RNA 0 & 1 : [8,10] & [17,19]
+Interaction b/w RNA 0 & 3 : [5,7] & [12,14]
+Time after all H:532ms
+
+New ordering: 0 2 -1 1 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -11.6416
+Interaction b/w RNA 0 & 1 : [8,10] & [17,19]
+Interaction b/w RNA 2 & 3 : [16,23] & [6,14]
+Interaction b/w RNA 2 & 1 : [10,14] & [8,12]
+Interaction b/w RNA 2 & 1 : [5,7] & [5,7]
+Time after all H:1128ms
+
+New ordering: 0 3 2 -1 1
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -6.04787
+Interaction b/w RNA 0 & 1 : [8,10] & [17,19]
+Interaction b/w RNA 2 & 1 : [10,14] & [8,12]
+Interaction b/w RNA 2 & 1 : [5,7] & [5,7]
+Time after all H:849ms
+
+New ordering: 0 1 2 -1 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -5.59372
+Interaction b/w RNA 2 & 3 : [16,23] & [6,14]
+Time after all H:975ms
+
+
+
+
+~~ New itertion of exploration ~~
+~~ this iteration's seed ordering: 0,2,-1,1,3,
+New ordering: 1 -1 2 0 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -6.04787
+Interaction b/w RNA 1 & 2 : [17,19] & [21,23]
+Interaction b/w RNA 1 & 2 : [12,16] & [14,18]
+Interaction b/w RNA 1 & 0 : [5,7] & [5,7]
+Time after all H:889ms
+
+New ordering: 3 1 -1 2 0
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -11.6416
+Interaction b/w RNA 1 & 2 : [17,19] & [21,23]
+Interaction b/w RNA 1 & 2 : [12,16] & [14,18]
+Interaction b/w RNA 1 & 0 : [5,7] & [5,7]
+Interaction b/w RNA 3 & 2 : [5,13] & [5,12]
+Time after all H:1029ms
+
+New ordering: 0 -1 2 1 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -0.897325
+Interaction b/w RNA 0 & 1 : [8,10] & [17,19]
+Interaction b/w RNA 0 & 3 : [5,7] & [12,14]
+Time after all H:530ms
+
+New ordering: 0 1 -1 2 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -6.67859
+Interaction b/w RNA 0 & 3 : [5,7] & [12,14]
+Interaction b/w RNA 1 & 2 : [17,19] & [21,23]
+Interaction b/w RNA 1 & 2 : [12,16] & [14,18]
+Interaction b/w RNA 1 & 2 : [5,7] & [9,11]
+Time after all H:923ms
+
+New ordering: 0 3 1 -1 2
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -11.4442
+Interaction b/w RNA 1 & 2 : [17,19] & [21,23]
+Interaction b/w RNA 1 & 2 : [12,16] & [14,18]
+Interaction b/w RNA 3 & 2 : [5,13] & [5,12]
+Time after all H:832ms
+
+New ordering: 0 2 1 -1 3
+totalDimSize = 191520
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % ..
+Energy: -5.59372
+Interaction b/w RNA 2 & 3 : [16,23] & [6,14]
+Time after all H:723ms
+
+
+
+
+
+Min Energy = -11.6416
+Min Energy Structure =
+[(0, 1, 10, 19, 2, 2), (2, 3, 23, 14, 7, 8), (2, 1, 14, 12, 4, 4), (2, 1, 7, 7, 2, 2)]
+Min ordering: 0 2 -1 1 3
+
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ./run_convg.sh  inputs/yeast_trunc
+Alis-Macbook:mrnai-bipartite-opt aliahmed$
+Alis-Macbook:mrnai-bipartite-opt aliahmed$
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ls
+LICENSE                             build                               output                              run_allperms.sh
+Makefile                            compile_bipartite_weights.py        prototypes                          run_convg.sh
+README.md                           compile_bipartite_weights_linear.py rnaup_weights                       src
+bip-run.sh                          inputs                              run.sh
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ cd output/
+Alis-Macbook:output aliahmed$ ls
+compiled_bipartite_weights.out default-0_2_itemized.out       default-1_2_itemized.out       default-2_1_itemized.out       default-3_1_itemized.out
+compiled_weights.out           default-0_3_itemized.out       default-1_3_itemized.out       default-2_3_itemized.out       default-3_2_itemized.out
+default-0_1_itemized.out       default-1_0_itemized.out       default-2_0_itemized.out       default-3_0_itemized.out
+Alis-Macbook:output aliahmed$ ls -l
+total 16840
+-rw-r--r--  1 aliahmed  staff  7416783 Jun  2 22:34 compiled_bipartite_weights.out
+-rw-r--r--  1 aliahmed  staff        0 May  2  2020 compiled_weights.out
+-rw-r--r--  1 aliahmed  staff    19805 Nov 29 13:44 default-0_1_itemized.out
+-rw-r--r--  1 aliahmed  staff    32493 Nov 29 13:44 default-0_2_itemized.out
+-rw-r--r--  1 aliahmed  staff     7021 Nov 29 13:44 default-0_3_itemized.out
+-rw-r--r--  1 aliahmed  staff    19787 Nov 29 13:44 default-1_0_itemized.out
+-rw-r--r--  1 aliahmed  staff   136101 Nov 29 13:44 default-1_2_itemized.out
+-rw-r--r--  1 aliahmed  staff    19380 Nov 29 13:44 default-1_3_itemized.out
+-rw-r--r--  1 aliahmed  staff    32688 Nov 29 13:44 default-2_0_itemized.out
+-rw-r--r--  1 aliahmed  staff   135834 Nov 29 13:44 default-2_1_itemized.out
+-rw-r--r--  1 aliahmed  staff    53130 Nov 29 13:44 default-2_3_itemized.out
+-rw-r--r--  1 aliahmed  staff     7038 Nov 29 13:44 default-3_0_itemized.out
+-rw-r--r--  1 aliahmed  staff    19196 Nov 29 13:44 default-3_1_itemized.out
+-rw-r--r--  1 aliahmed  staff    52794 Nov 29 13:44 default-3_2_itemized.out
+Alis-Macbook:output aliahmed$ cd ..
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ cd inputs/
+Alis-Macbook:inputs aliahmed$ ls
+MutliFold RNA sequences bad_cops                copa_copt_three         hprj                    test_4way
+U6U2                    burke                   ensg                    multi_seq               three_ribo
+alis_example            copa_copt               hairpin_ribo_2way       only_copa_split         yeast
+bacillus                copa_copt_four          hairpin_ribo_4way       oxys_fhla               yeast_trunc
+Alis-Macbook:inputs aliahmed$ sublime alis_new_example
+Alis-Macbook:inputs aliahmed$ cd ../output/
+Alis-Macbook:output aliahmed$ ls
+compiled_bipartite_weights.out default-0_2_itemized.out       default-1_2_itemized.out       default-2_1_itemized.out       default-3_1_itemized.out
+compiled_weights.out           default-0_3_itemized.out       default-1_3_itemized.out       default-2_3_itemized.out       default-3_2_itemized.out
+default-0_1_itemized.out       default-1_0_itemized.out       default-2_0_itemized.out       default-3_0_itemized.out
+Alis-Macbook:output aliahmed$ rm default-*
+Alis-Macbook:output aliahmed$ ls
+compiled_bipartite_weights.out compiled_weights.out
+Alis-Macbook:output aliahmed$ rm compiled_*
+Alis-Macbook:output aliahmed$ ls
+Alis-Macbook:output aliahmed$ cd ..
+Alis-Macbook:mrnai-bipartite-opt aliahmed$ ./run_convg.sh  inputs/alis_new_example
+Using k = 2
+Using parallel = 0
+using trials  = 1
+using gaps  = 1
+Enter sequences: Enter names seperated by '&'
+DSDSDSDSEnter even|odd:
+0 name:     ENSG00000277918
+0 sequence: TTTTCCCAGGGCGAGGCTTATCCATTGCACTCCGGATGTGCTGACCCCTGCGAT
+0 length:   54
+1 name:     ENSG00000200800
+1 sequence: ACCACATTTGGGAAATTCGTCTGCATAATTTGTGGTAGTGGGAGACTGCGTTTGCT
+1 length:   56
+2 name:     ENSG00000239023
+2 sequence: TCACGAAGGTGGTTTTCCCAAGGCAAGATTTATTCACTGCACTCTGGATGTGCTGACCCCTACGATTTCCGCCCAATGGGGAAGCTTGACTGCTTAGT
+2 length:   98
+3 name:     ENSG00000207205
+3 sequence: ATACTTACTTGGCGGGGGAGATACCATGATCACGAAGGTGGTTTTCTCAGGGCGAGGCTTATCCGTTA
+3 length:   68
+Computing matrix from RNAup....
+
+Pair even: 0 and odd: 1, num = 0
+Even name = ENSG00000277918
+Odd name = ENSG00000200800
+
+
+Pair even: 0 and odd: 2, num = 1
+Even name = ENSG00000277918
+Odd name = ENSG00000239023
+
+
+Pair even: 0 and odd: 3, num = 2
+Even name = ENSG00000277918
+Odd name = ENSG00000207205
+
+
+Pair even: 1 and odd: 0, num = 3
+Even name = ENSG00000200800
+Odd name = ENSG00000277918
+
+
+Pair even: 1 and odd: 2, num = 4
+Even name = ENSG00000200800
+Odd name = ENSG00000239023
+
+
+Pair even: 1 and odd: 3, num = 5
+Even name = ENSG00000200800
+Odd name = ENSG00000207205
+
+
+Pair even: 2 and odd: 0, num = 6
+Even name = ENSG00000239023
+Odd name = ENSG00000277918
+
+
+Pair even: 2 and odd: 1, num = 7
+Even name = ENSG00000239023
+Odd name = ENSG00000200800
+
+
+Pair even: 2 and odd: 3, num = 8
+Even name = ENSG00000239023
+Odd name = ENSG00000207205
+
+
+Pair even: 3 and odd: 0, num = 9
+Even name = ENSG00000207205
+Odd name = ENSG00000277918
+
+
+Pair even: 3 and odd: 1, num = 10
+Even name = ENSG00000207205
+Odd name = ENSG00000200800
+
+
+Pair even: 3 and odd: 2, num = 11
+Even name = ENSG00000207205
+Odd name = ENSG00000239023
+
+
+Have computed matching matrix
+Enter Sequences: Enter Names: Read weights from file....
+
+Read file output/default-0_1_itemized.out
+Read file output/default-0_2_itemized.out
+Read file output/default-0_3_itemized.out
+Read file output/default-1_0_itemized.out
+Read file output/default-1_2_itemized.out
+Read file output/default-1_3_itemized.out
+Read file output/default-2_0_itemized.out
+Read file output/default-2_1_itemized.out
+Read file output/default-2_3_itemized.out
+Read file output/default-3_0_itemized.out
+Read file output/default-3_1_itemized.out
+Read file output/default-3_2_itemized.out
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -22.8803
+Interaction b/w RNA 1 & 2 : [39,54] & [79,95]
+Interaction b/w RNA 0 & 2 : [31,36] & [51,56]
+Interaction b/w RNA 0 & 2 : [27,30] & [46,49]
+Interaction b/w RNA 0 & 3 : [2,7] & [48,53]
+Interaction b/w RNA 1 & 3 : [32,37] & [42,47]
+Interaction b/w RNA 1 & 3 : [23,24] & [16,17]
+Interaction b/w RNA 1 & 2 : [11,20] & [29,37]
+Time after all H:455719ms
+Starting order: 0, 1, -1, 2, 3,
+starting config: [(1, 2, 54, 95, 15, 16), (0, 2, 36, 56, 5, 5), (0, 2, 30, 49, 3, 3), (0, 3, 7, 53, 5, 5), (1, 3, 37, 47, 5, 5), (1, 3, 24, 17, 1, 1), (1, 2, 20, 37, 9, 8)]
+starting config energy: -22.8803
+
+~~ New itertion of exploration ~~
+~~ this iteration's seed ordering: 0,1,-1,2,3,
+New ordering: 2 -1 1 0 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -29.7617
+Interaction b/w RNA 2 & 3 : [90,98] & [54,62]
+Interaction b/w RNA 2 & 3 : [71,74] & [16,19]
+Interaction b/w RNA 2 & 1 : [62,70] & [37,46]
+Interaction b/w RNA 2 & 3 : [59,61] & [12,14]
+Interaction b/w RNA 2 & 0 : [50,53] & [25,28]
+Interaction b/w RNA 2 & 0 : [43,48] & [19,24]
+Interaction b/w RNA 2 & 1 : [38,40] & [32,34]
+Interaction b/w RNA 2 & 1 : [4,20] & [3,18]
+Time after all H:374284ms
+
+New ordering: 3 2 -1 1 0
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -22.8803
+Interaction b/w RNA 2 & 1 : [62,70] & [37,46]
+Interaction b/w RNA 3 & 1 : [52,53] & [33,34]
+Interaction b/w RNA 3 & 1 : [22,27] & [20,25]
+Interaction b/w RNA 3 & 0 : [16,21] & [48,53]
+Interaction b/w RNA 2 & 0 : [50,53] & [25,28]
+Interaction b/w RNA 2 & 0 : [43,48] & [19,24]
+Interaction b/w RNA 2 & 1 : [4,20] & [3,18]
+Time after all H:604953ms
+
+New ordering: 0 -1 1 2 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -10.678
+Interaction b/w RNA 0 & 2 : [31,36] & [51,56]
+Interaction b/w RNA 0 & 2 : [27,30] & [46,49]
+Interaction b/w RNA 0 & 2 : [12,13] & [35,36]
+Interaction b/w RNA 0 & 1 : [2,7] & [42,47]
+Time after all H:388841ms
+
+New ordering: 0 2 -1 1 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -31.2716
+Interaction b/w RNA 2 & 3 : [90,98] & [54,62]
+Interaction b/w RNA 0 & 3 : [30,33] & [49,52]
+Interaction b/w RNA 2 & 3 : [71,74] & [16,19]
+Interaction b/w RNA 2 & 1 : [62,70] & [37,46]
+Interaction b/w RNA 0 & 1 : [26,28] & [32,34]
+Interaction b/w RNA 2 & 3 : [59,61] & [12,14]
+Interaction b/w RNA 2 & 3 : [46,49] & [5,8]
+Interaction b/w RNA 2 & 1 : [4,20] & [3,18]
+Time after all H:585492ms
+
+New ordering: 0 3 2 -1 1
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -16.6102
+Interaction b/w RNA 2 & 1 : [64,70] & [40,46]
+Interaction b/w RNA 3 & 1 : [50,53] & [35,38]
+Interaction b/w RNA 2 & 1 : [49,53] & [30,34]
+Interaction b/w RNA 3 & 1 : [22,27] & [20,25]
+Interaction b/w RNA 0 & 1 : [30,32] & [13,15]
+Interaction b/w RNA 0 & 1 : [27,29] & [2,4]
+Time after all H:367286ms
+
+New ordering: 0 1 2 -1 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -24.2316
+Interaction b/w RNA 1 & 3 : [42,44] & [63,65]
+Interaction b/w RNA 2 & 3 : [90,98] & [54,62]
+Interaction b/w RNA 0 & 3 : [30,33] & [49,52]
+Interaction b/w RNA 1 & 3 : [32,37] & [42,47]
+Interaction b/w RNA 1 & 3 : [16,18] & [33,35]
+Interaction b/w RNA 1 & 3 : [9,14] & [20,25]
+Interaction b/w RNA 2 & 3 : [71,74] & [16,19]
+Interaction b/w RNA 2 & 3 : [59,61] & [12,14]
+Interaction b/w RNA 2 & 3 : [46,49] & [5,8]
+Time after all H:334463ms
+
+
+
+
+~~ New itertion of exploration ~~
+~~ this iteration's seed ordering: 0,2,-1,1,3,
+New ordering: 1 -1 2 0 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -16.6102
+Interaction b/w RNA 1 & 0 : [53,55] & [26,28]
+Interaction b/w RNA 1 & 0 : [42,44] & [23,25]
+Interaction b/w RNA 1 & 3 : [32,37] & [42,47]
+Interaction b/w RNA 1 & 2 : [23,27] & [46,50]
+Interaction b/w RNA 1 & 3 : [19,22] & [16,19]
+Interaction b/w RNA 1 & 2 : [11,17] & [29,35]
+Time after all H:409482ms
+
+New ordering: 3 1 -1 2 0
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -31.2716
+Interaction b/w RNA 1 & 2 : [39,54] & [79,95]
+Interaction b/w RNA 1 & 0 : [23,25] & [27,29]
+Interaction b/w RNA 3 & 2 : [61,64] & [50,53]
+Interaction b/w RNA 3 & 2 : [55,57] & [38,40]
+Interaction b/w RNA 1 & 2 : [11,20] & [29,37]
+Interaction b/w RNA 3 & 2 : [50,53] & [25,28]
+Interaction b/w RNA 3 & 0 : [17,20] & [22,25]
+Interaction b/w RNA 3 & 2 : [7,15] & [1,9]
+Time after all H:536989ms
+
+New ordering: 0 -1 2 1 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -10.678
+Interaction b/w RNA 0 & 2 : [31,36] & [51,56]
+Interaction b/w RNA 0 & 2 : [27,30] & [46,49]
+Interaction b/w RNA 0 & 2 : [12,13] & [35,36]
+Interaction b/w RNA 0 & 1 : [2,7] & [42,47]
+Time after all H:329777ms
+
+New ordering: 0 1 -1 2 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -22.8803
+Interaction b/w RNA 1 & 2 : [39,54] & [79,95]
+Interaction b/w RNA 0 & 2 : [31,36] & [51,56]
+Interaction b/w RNA 0 & 2 : [27,30] & [46,49]
+Interaction b/w RNA 0 & 3 : [2,7] & [48,53]
+Interaction b/w RNA 1 & 3 : [32,37] & [42,47]
+Interaction b/w RNA 1 & 3 : [23,24] & [16,17]
+Interaction b/w RNA 1 & 2 : [11,20] & [29,37]
+Time after all H:408684ms
+
+New ordering: 0 3 1 -1 2
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -29.7617
+Interaction b/w RNA 1 & 2 : [39,54] & [79,95]
+Interaction b/w RNA 1 & 2 : [23,25] & [59,61]
+Interaction b/w RNA 0 & 2 : [31,36] & [51,56]
+Interaction b/w RNA 0 & 2 : [27,30] & [46,49]
+Interaction b/w RNA 3 & 2 : [55,57] & [38,40]
+Interaction b/w RNA 1 & 2 : [11,20] & [29,37]
+Interaction b/w RNA 3 & 2 : [50,53] & [25,28]
+Interaction b/w RNA 3 & 2 : [7,15] & [1,9]
+Time after all H:323192ms
+
+New ordering: 0 2 1 -1 3
+totalDimSize = 21415185
+Completed:
+10 % .. 20 % .. 30 % .. 40 % .. 50 % .. 60 % .. 70 % .. 80 % .. 90 % .. 100 % ..
+Energy: -24.2316
+Interaction b/w RNA 1 & 3 : [42,44] & [63,65]
+Interaction b/w RNA 2 & 3 : [90,98] & [54,62]
+Interaction b/w RNA 0 & 3 : [30,33] & [49,52]
+Interaction b/w RNA 1 & 3 : [32,37] & [42,47]
+Interaction b/w RNA 1 & 3 : [16,18] & [33,35]
+Interaction b/w RNA 1 & 3 : [9,14] & [20,25]
+Interaction b/w RNA 2 & 3 : [71,74] & [16,19]
+Interaction b/w RNA 2 & 3 : [59,61] & [12,14]
+Interaction b/w RNA 2 & 3 : [46,49] & [5,8]
+Time after all H:288074ms
+
+
+
+
+
+Min Energy = -31.2716
+Min Energy Structure =
+[(2, 3, 98, 62, 8, 8), (0, 3, 33, 52, 3, 3), (2, 3, 74, 19, 3, 3), (2, 1, 70, 46, 8, 9), (0, 1, 28, 34, 2, 2), (2, 3, 61, 14, 2, 2), (2, 3, 49, 8, 3, 3), (2, 1, 20, 18, 16, 15)]
+Min ordering: 0 2 -1 1 3
+
+Alis-Macbook:mrnai-bipartite-opt aliahmed$
