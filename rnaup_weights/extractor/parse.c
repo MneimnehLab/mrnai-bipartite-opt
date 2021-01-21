@@ -22,7 +22,7 @@ int readAndTokenizeRNAs(char **strArray1)
 	char *line___ = NULL;
 	size_t size;
 	int lres = getline(&line___, &size, stdin);
-	char line[500];
+	char line[5000];
 	strcpy(line, line___);
 	line[strlen(line___)-1] = '\0';
 	//////////////////////////
@@ -76,7 +76,7 @@ void readEvenOdd()
 	char *line___ = NULL;
 	size_t size;
 	int lres = getline(&line___, &size, stdin);
-	char line[200];
+	char line[5000];
 	strcpy(line, line___);
 	line[strlen(line___)-1] = '\0';
 	//////////////////////////
@@ -137,7 +137,7 @@ void tokenizeNames(int num)
 	char *line___ = NULL;
 	size_t size;
 	int lres = getline(&line___, &size, stdin);
-	char line[200];
+	char line[5000];
 	strcpy(line, line___);
 	line[strlen(line___)-1] = '\0';
 	//////////////////////////

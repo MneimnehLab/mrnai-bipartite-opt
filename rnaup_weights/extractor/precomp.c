@@ -565,7 +565,7 @@ void readPirna(int evenId, int oddId, int n1, int n2, int location, double *****
 	FILE * file = fopen(fileName, "rt");
 	if ( file != NULL )
 	{
-		char line [ 500 ]; 
+		char line [ 5000 ]; 
 		while ( fgets ( line, sizeof line, file ) != NULL ) 
 		{		
 			
