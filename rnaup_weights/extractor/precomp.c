@@ -14,8 +14,6 @@ extern int wType;
 int matchingMatrix[10][10];
 double ***** rnaupCollections;
 
-// extern void doRNAupAndReverse(char * evenString, char * oddString, int location, double ***** rnaupCollections, char * rnaupOut1, int GU);
-
 void doSubAddFor2RNAs_twoW(int loc, int n1, int n2, int rna1, int rna2);
 void doSubAddFor2RNAs_sameW(int loc, int n1, int n2, int rna1, int rna2);
 void readPirna(int evenId, int oddId, int n1, int n2, int location, double ***** rnaupCollections, char * fileName2);

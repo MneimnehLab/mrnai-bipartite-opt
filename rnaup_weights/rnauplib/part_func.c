@@ -141,8 +141,6 @@ PRIVATE FLT_OR_DBL qo, qho, qio, qmo, *qm2;
 static char *pstruc;
 static char *sequence;
 
-extern char * rnaupOut;
-
 #define ISOLATED  256.0
 #define TURN 1
 /*-----------------------------------------------------------------*/
@@ -191,11 +189,6 @@ PUBLIC float pf_fold(char *sequence, char *structure)
 #endif
   /* in case we abort because of floating point errors */
   if (n>1600) {fprintf(stderr, "free energy = %8.2f\n", free_energy); printf("stderr free energy = %8.2f\n", free_energy);}
-
-  
-  // char fileName[100];
-	// sprintf(fileName, "output/%s_rnaup_part_func_%d.txt", rnaupOut, strlen(sequence));
-	// FILE * fpali = fopen(fileName,"wt");
 
 	int ja, ia;
 	for (ja=TURN+2;ja<=n; ja++) 

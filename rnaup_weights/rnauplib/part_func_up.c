@@ -919,22 +919,6 @@ PUBLIC interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu
     fpGfunc = fopen(fileName2, "w");
 
 
-
-    // char fileName3[50];
-    // sprintf(fileName3, "output/%s_energies.out", rnaupOut, n1, n2);
-
-    // FILE *fpEnergy;
-    // fpEnergy = fopen(fileName3, "w");
-
-    // char weightsFileName[50];
-    // sprintf(weightsFileName, "output/%s.weights", rnaupOut);
-
-    // FILE *fpWeights;
-    // fpWeights = fopen(weightsFileName, "w");
-
-
-
-
     //int doFp = 0;
     //if(doFp) fp = fopen("d:\\G_holder.out", "w");
     char fileName[50];
