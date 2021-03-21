@@ -101,8 +101,6 @@ int task; /* input mode for calculation of interaction */
 
 
 double matrix[MAX_RNA_SIZE][MAX_RNA_SIZE][26][26];
-char stringEven[MAX_RNA_SIZE];
-char stringOdd[MAX_RNA_SIZE];
 InterDims interDimArray[10];
 
 char * rnaupOut;
@@ -118,6 +116,9 @@ void initRNAup()
 
 void doRNAupAndReverse(char * evenString, char * oddString, int location, double ***** rnaupCollections, char * rnaupOut1, int GU)
 {
+	char stringEven[MAX_RNA_SIZE];
+	char stringOdd[MAX_RNA_SIZE];
+
 	// printf("evenString = %s\n", evenString);
 	noGU = 1 - GU;
 	//char * ns_bases = "AC,GA,CA,UG";
