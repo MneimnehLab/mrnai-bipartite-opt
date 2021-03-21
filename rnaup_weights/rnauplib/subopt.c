@@ -193,7 +193,7 @@ PUBLIC  double print_energy = 9999; /* printing threshold for use with logML */
 extern	int circ;
 PUBLIC	SOLUTION *subopt_circ(char *seq, char *sequence, int delta, FILE *fp);
 PRIVATE int *fM2;	 /* energies of M2 */
-PUBLIC	int	Fc, FcH, FcI, FcM;		/* parts of the exterior loop energies */
+PRIVATE	int	Fc, FcH, FcI, FcM;		/* parts of the exterior loop energies */
 
 PRIVATE void encode_seq(char *sequence) {
   unsigned int i,l;
