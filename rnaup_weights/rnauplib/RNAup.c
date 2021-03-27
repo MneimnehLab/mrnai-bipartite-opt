@@ -448,18 +448,18 @@ exit(0);
         }
         if (string2 != NULL) free(string2);
         string2 = NULL;*/
-printf("here 9 \n");		
+// printf("here 9 \n");		
 		if (line != NULL) free(line);
-printf("here 9 a\n"); fflush(stdout);
+// printf("here 9 a\n"); fflush(stdout);
 		//if (string1 != NULL) free(string1);
 		//if (string2 != NULL) free(string2);
 		if (cstruc != NULL) free(cstruc);
-printf("here 9 b \n"); fflush(stdout);
+// printf("here 9 b \n"); fflush(stdout);
 		if (cstruc_l != NULL) free(cstruc_l);
-printf("here 9 c \n"); fflush(stdout);
+// printf("here 9 c \n"); fflush(stdout);
 		if (cstruc_s != NULL) free(cstruc_s);
 //printf("here 10 \n");	
-printf("here 9 d \n"); fflush(stdout);
+// printf("here 9 d \n"); fflush(stdout);
 //	return 0;
 	
 	
