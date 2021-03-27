@@ -106,7 +106,7 @@ void computeMatchingMatrixFromRNAup(int numOfRNA, char * rnaupOut, int GU)
 			sprintf (rnaupOutExtend, "%s-%d_%d", rnaupOut, even, odd);
 			doRNAupAndReverse(origRNASequences[even]->string, origRNASequences[odd]->string, i, rnaupCollections, rnaupOutExtend, GU);
 			
-			// printf("printing... \n");
+			printf("printing... \n");
 			
 			int x,y;
 			char fileName[40];
@@ -232,6 +232,7 @@ void computeMatchingMatrixFromFile(int numOfRNA, char * fileName, char * rnaupOu
 
 			printf("Even name = %s \n", origRNASequences[even]->name);
 			printf("Odd name = %s \n", origRNASequences[odd]->name);
+			printf("printing2... \n");
 			int evenLen = strlen(origRNASequences[even]->string);
 			int oddLen = strlen(origRNASequences[odd]->string);
 			
@@ -244,7 +245,7 @@ void computeMatchingMatrixFromFile(int numOfRNA, char * fileName, char * rnaupOu
 				doSubAddFor2RNAs_twoW(i, evenLen, oddLen, even, odd);
 			
 			
-			
+			printf("printing... \n");
 			/*
 			printf("printing... \n");
 			

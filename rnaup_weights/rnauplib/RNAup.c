@@ -161,15 +161,15 @@ void doRNAupAndReverse(char * evenString, char * oddString, int location, double
 	strcpy(stringEven, evenString);
 	strcpy(stringOdd, oddString);
 			
-	// printf("stringEven = %s \n", stringEven);
-	// printf("stringOdd = %s \n", stringOdd);
+	printf("stringEven = %s \n", stringEven);
+	printf("stringOdd = %s \n", stringOdd);
 			
 	int n1, n2;
 	n1 = strlen(stringEven);
 	n2 = strlen(stringOdd);
 			
 			
-	// printf("Sending to perform2... ");
+	printf("Sending to perform2... ");
 	// printMilliSecs();
 
 	perform2(stringEven, stringOdd, location, rnaupCollections, rnaupOut1);

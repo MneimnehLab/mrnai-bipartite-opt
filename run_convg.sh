@@ -9,4 +9,4 @@ if [ "$#" -lt 1 ]; then
 fi
 
 head -n 3 $INPUT_FILE | rnaup_weights/weights_rnaup -gu 1
-build/converge -k 4 -gs 0 -gu 1  < $INPUT_FILE
+# build/converge -k 4 -gs 0 -gu 1  < $INPUT_FILE
