@@ -413,8 +413,8 @@ exit(0);
 
 		
 		printf("here 3 \n"); fflush(stdout);
-        // if (structure != NULL) free(structure);
-        // structure = NULL;
+        if (structure != NULL) free(structure);
+        structure = NULL;
 printf("here 4 \n"); fflush(stdout);
         // if (title != NULL) free(title);
         // title = NULL;
@@ -428,7 +428,7 @@ printf("here 6 a\n"); fflush(stdout);
 printf("here 6 b\n"); fflush(stdout);
         // free_pu_contrib(unstr_short);
 printf("here 6 c\n"); fflush(stdout);
-        free_arrays(); /* for arrays for fold(...) */
+        // free_arrays(); /* for arrays for fold(...) */
 printf("here 7 \n"); fflush(stdout);
         if (cstruc != NULL) free(cstruc);
         cstruc = NULL;
