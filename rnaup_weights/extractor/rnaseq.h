@@ -1,4 +1,4 @@
-#define MAX_RNA_SIZE 2500
+#define MAX_RNA_SIZE 500
 #define MAX_NUM_RNA 10
 #define GAP 4
 
