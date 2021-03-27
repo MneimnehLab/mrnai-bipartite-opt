@@ -415,18 +415,18 @@ exit(0);
 		//printf("here 3 \n");
         if (structure != NULL) free(structure);
         structure = NULL;
-//printf("here 4 \n");
+printf("here 4 \n");
         if (title != NULL) free(title);
         title = NULL;
-//printf("here 5 \n");
+printf("here 5 \n");
         if (u_vals != NULL) free(u_vals);
         u_vals = NULL;
-//printf("here 6 \n");
+printf("here 6 \n");
 		free_pu_contrib(unstr_out);
 		free_interact(inter_out);
         free_pu_contrib(unstr_short);
         free_arrays(); /* for arrays for fold(...) */
-//printf("here 7 \n");
+printf("here 7 \n");
         if (cstruc != NULL) free(cstruc);
         cstruc = NULL;
 
@@ -437,7 +437,7 @@ exit(0);
         cstruc_s = NULL;
 
         (void) fflush(stdout);
-//printf("here 8 \n");
+printf("here 8 \n");
         /*if (string1 != NULL)
         {
             free(string1);
@@ -445,7 +445,7 @@ exit(0);
         }
         if (string2 != NULL) free(string2);
         string2 = NULL;*/
-//printf("here 9 \n");		
+printf("here 9 \n");		
 		if (line != NULL) free(line);
 		//if (string1 != NULL) free(string1);
 		//if (string2 != NULL) free(string2);
