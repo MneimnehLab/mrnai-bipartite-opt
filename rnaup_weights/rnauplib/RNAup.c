@@ -422,13 +422,13 @@ printf("here 5 \n"); fflush(stdout);
         // if (u_vals != NULL) free(u_vals);
         // u_vals = NULL;
 printf("here 6 \n"); fflush(stdout);
-		// free_pu_contrib(unstr_out);
+		free_pu_contrib(unstr_out);
 printf("here 6 a\n"); fflush(stdout);
-		// free_interact(inter_out);
+		free_interact(inter_out);
 printf("here 6 b\n"); fflush(stdout);
-        // free_pu_contrib(unstr_short);
+        free_pu_contrib(unstr_short);
 printf("here 6 c\n"); fflush(stdout);
-        // free_arrays(); /* for arrays for fold(...) */
+        free_arrays(); /* for arrays for fold(...) */
 printf("here 7 \n"); fflush(stdout);
         if (cstruc != NULL) free(cstruc);
         cstruc = NULL;
