@@ -412,35 +412,35 @@ exit(0);
 */
 
 		
-		printf("here 3 \n"); fflush(stdout);
+		// printf("here 3 \n"); fflush(stdout);
         if (structure != NULL) free(structure);
         structure = NULL;
-printf("here 4 \n"); fflush(stdout);
+// printf("here 4 \n"); fflush(stdout);
         if (title != NULL) free(title);
         title = NULL;
-printf("here 5 \n"); fflush(stdout);
+// printf("here 5 \n"); fflush(stdout);
         // if (u_vals != NULL) free(u_vals);
         // u_vals = NULL;
-printf("here 6 \n"); fflush(stdout);
+// printf("here 6 \n"); fflush(stdout);
 		free_pu_contrib(unstr_out);
-printf("here 6 a\n"); fflush(stdout);
+// printf("here 6 a\n"); fflush(stdout);
 		free_interact(inter_out);
-printf("here 6 b\n"); fflush(stdout);
+// printf("here 6 b\n"); fflush(stdout);
         free_pu_contrib(unstr_short);
-printf("here 6 c\n"); fflush(stdout);
+// printf("here 6 c\n"); fflush(stdout);
         free_arrays(); /* for arrays for fold(...) */
-printf("here 7 \n"); fflush(stdout);
+// printf("here 7 \n"); fflush(stdout);
         if (cstruc != NULL) free(cstruc);
         cstruc = NULL;
-printf("here 7 a\n"); fflush(stdout);
+// printf("here 7 a\n"); fflush(stdout);
         if (cstruc_l != NULL) free(cstruc_l);
         cstruc_l = NULL;
-printf("here 7 b\n"); fflush(stdout);
+// printf("here 7 b\n"); fflush(stdout);
         if (cstruc_s != NULL) free(cstruc_s);
         cstruc_s = NULL;
-printf("here 7 c\n"); fflush(stdout);
+// printf("here 7 c\n"); fflush(stdout);
         (void) fflush(stdout);
-printf("here 8 \n"); fflush(stdout);
+// printf("here 8 \n"); fflush(stdout);
         /*if (string1 != NULL)
         {
             free(string1);
