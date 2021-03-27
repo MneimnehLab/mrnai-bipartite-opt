@@ -151,6 +151,8 @@ PRIVATE void get_arrays(unsigned int size)
 
 void free_arrays(void)
 {
+
+  printf("here 10 0 \n"); fflush(stdout);
   free(indx); 
   printf("here 10 a \n"); fflush(stdout);
   free(c); 
