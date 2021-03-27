@@ -20,9 +20,9 @@ typedef struct interact { /* contributions to prob_unpaired in */
   int length; /* length of longer sequence */  
 } interact;
 /* prob of unpaired region of length w */
-extern pu_contrib *pf_unstru(char *sequence, int max_w);
+extern pu_contrib *pf_unstru(char *sequence, int max_w, char* outputname);
 /* prob. of intermolecular interaction between two sequences of maximal length w*  prob unpaired from pf_unpaired */
-extern interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu_contrib *p_c2, int max_w, char *cstruc, int incr3, int incr5);
+extern interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu_contrib *p_c2, int max_w, char *cstruc, int incr3, int incr5, char* rnaup_out_file);
 extern void free_pu_contrib(pu_contrib *p_con);
 extern void free_interact(interact *pin);
 extern int Up_plot(pu_contrib *p_c, pu_contrib *p_c_sh, interact *pint, char *ofile, int *u_vals, char *select_contrib, char *head);

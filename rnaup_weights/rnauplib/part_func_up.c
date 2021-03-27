@@ -86,8 +86,8 @@ static char rcsid[] = "$Id: part_func_up.c,v 1.4 2008/07/04 14:27:36 ivo Exp $";
 
 #define ALI_DEBUG 0
 
-PUBLIC pu_contrib *pf_unstru(char *sequence, int w);
-PUBLIC interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu_contrib *p_c2, int w, char *cstruc, int incr3, int incr5);
+PUBLIC pu_contrib *pf_unstru(char *sequence, int w, char* outputname);
+PUBLIC interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu_contrib *p_c2, int w, char *cstruc, int incr3, int incr5, char* rnaup_out_file);
 /* free_pf_two: first argument output of pf_unstru() !!!! */
 /* PUBLIC  void free_pf_two(pu_contrib *p_con, double **p_in); */
 PUBLIC void free_pu_contrib(pu_contrib *p_con);
@@ -141,15 +141,13 @@ PRIVATE double init_temp; /* temperature in last call to scale_pf_params */
 PUBLIC double **** rnaWins;	//rnaWins[1st rna][2nd rna][winSize];
 double INF_1 = 9999;
 
-extern char * rnaupOut;
-
 #define ISOLATED  256.0
 
 /*-----------------------------------------------------------------*/
 PRIVATE short *S, *S1, *SS, *SS2;
 /* you have to call pf_fold(sequence, structure); befor pf_unstru */
 
-PUBLIC pu_contrib *pf_unstru(char *sequence, int w)
+PUBLIC pu_contrib *pf_unstru(char *sequence, int w, char *outputname)
 {
 #if ALI_DEBUG == 1
   printf("pf_unstru(%s,%d)\n", sequence, w);
@@ -578,7 +576,7 @@ PUBLIC pu_contrib *pf_unstru(char *sequence, int w)
 
 	// printf("\n\n\nPRINTING PU\n\n\n");
 	char fileName[100];
-	sprintf(fileName, "output/%s_pu_part_%d.out", rnaupOut, n);
+	sprintf(fileName, "output/%s_pu_part_%d.out", outputname, n);
 	//FILE * fp_pu = fopen(fileName,"w");
 	for (i = 1; i < n; i++)
     {
@@ -759,7 +757,7 @@ void backTrackEnergy(int k, int l, int i, int j, btrk_tuple **** backtrackMaxEne
 }
 
 /* s1 is the longer seq */
-PUBLIC interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu_contrib *p_c2, int w, char *cstruc, int incr3, int incr5) 
+PUBLIC interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu_contrib *p_c2, int w, char *cstruc, int incr3, int incr5, char* rnaup_out_file) 
 {
 #if ALI_DEBUG == 1
   printf("pf_interact()\n");
@@ -913,7 +911,7 @@ PUBLIC interact *pf_interact(const char *s1, const char *s2, pu_contrib *p_c, pu
     //fpNew = fopen("output\\test_wins_again.txt", "w");
 
     char fileName2[50];
-    sprintf(fileName2, "output/%s_itemized.out", rnaupOut, n1, n2);
+    sprintf(fileName2, "output/%s_itemized.out", rnaup_out_file, n1, n2);
 
     FILE *fpGfunc;
     fpGfunc = fopen(fileName2, "w");

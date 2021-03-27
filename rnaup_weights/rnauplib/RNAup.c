@@ -55,7 +55,7 @@ void showChildrenForW(int w, int count, FILE*);
 int makeListForWk(char* str1, char* str2, int k);
 void filterAllW(char* string1, char* string2);
 
-void perform2(char * string1, char * string2, int ic, double ***** rnaupCollections);
+void perform2(char * string1, char * string2, int ic, double ***** rnaupCollections, char* rnaup_out_filename);
 void reverseRNAupOutput(int location, int n1, int n2, double ***** rnaupCollections);	//rnaWins
 
 static char scale1[] = "....,....1....,....2....,....3....,....4";
@@ -103,7 +103,7 @@ int task; /* input mode for calculation of interaction */
 double matrix[MAX_RNA_SIZE][MAX_RNA_SIZE][26][26];
 InterDims interDimArray[10];
 
-char * rnaupOut;
+// char * rnaupOut;
 
 void initRNAup()
 {
@@ -153,7 +153,7 @@ void doRNAupAndReverse(char * evenString, char * oddString, int location, double
 	
 	// End Non canonical pairs
 	
-	rnaupOut = rnaupOut1;
+	// rnaupOut = rnaupOut1;
 
 	// printf("Starting RNAup... ");
 	// printMilliSecs();
@@ -172,7 +172,7 @@ void doRNAupAndReverse(char * evenString, char * oddString, int location, double
 	// printf("Sending to perform2... ");
 	// printMilliSecs();
 
-	perform2(stringEven, stringOdd, location, rnaupCollections);
+	perform2(stringEven, stringOdd, location, rnaupCollections, rnaupOut1);
 
 
 	// printf("Exited perform2... ");
@@ -201,7 +201,7 @@ void doRNAupAndReverse(char * evenString, char * oddString, int location, double
 
 
 
-void perform2(char * string1, char * string2, int ic, double ***** rnaupCollections)
+void perform2(char * string1, char * string2, int ic, double ***** rnaupCollections, char* rnaup_out_filename)
 {
 //	int *** returnPointer;
 
@@ -347,7 +347,7 @@ void perform2(char * string1, char * string2, int ic, double ***** rnaupCollecti
 		
 		*/
 		
-		unstr_short = pf_unstru(string2, w_sh);
+		unstr_short = pf_unstru(string2, w_sh, "aaaaa1111");
 		free_pf_arrays(); /* for arrays for pf_fold(...) */
 	
 		/* calculate prob. unstructured for longer seq */
@@ -372,7 +372,7 @@ void perform2(char * string1, char * string2, int ic, double ***** rnaupCollecti
 			strncpy(structure, cstruc_l, length1 + 1);
 		
 		energy = pf_fold(string1, structure);
-		unstr_out = pf_unstru(string1, wplus);
+		unstr_out = pf_unstru(string1, wplus, "aaaaaaa111111");
 		
 		/** At this point, we have P_u[i,j] fora ll i,j s.t. j-i < 25 */
 					
@@ -388,7 +388,7 @@ void perform2(char * string1, char * string2, int ic, double ***** rnaupCollecti
 
 
 		//printf("about to send to pf_interact for n1=%d, n2=%d \n", strlen(string1), strlen(string2));	
-		inter_out = pf_interact(string1, string2, unstr_out, unstr_short, w, cstruc, incr3, incr5);
+		inter_out = pf_interact(string1, string2, unstr_out, unstr_short, w, cstruc, incr3, incr5, rnaup_out_filename);
 		print_interaction(inter_out, string1, string2, unstr_out, unstr_short, w, incr3, incr5);
 		
 
