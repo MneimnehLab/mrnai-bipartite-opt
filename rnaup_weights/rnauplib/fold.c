@@ -151,13 +151,36 @@ PRIVATE void get_arrays(unsigned int size)
 
 void free_arrays(void)
 {
-  free(indx); free(c); free(fML); free(f5); free(cc); free(cc1);
+  free(indx); 
+  printf("here 10 a \n"); fflush(stdout);
+  free(c); 
+  printf("here 10 b \n"); fflush(stdout);
+  free(fML); 
+  printf("here 10 c \n"); fflush(stdout);
+  free(f5); 
+  printf("here 10 d \n"); fflush(stdout);
+  free(cc); 
+  printf("here 10 e \n"); fflush(stdout);
+  free(cc1);
+  printf("here 10 f \n"); fflush(stdout);
   free(ptype);
+  printf("here 10 g \n"); fflush(stdout);
   if(fM1){ free(fM1); fM1=NULL;}
   if(fM2){ free(fM2); fM2=NULL;}
 
-  free(base_pair); base_pair=NULL; free(Fmi);
-  free(DMLi); free(DMLi1);free(DMLi2);
+  free(base_pair); base_pair=NULL; 
+  printf("here 10 h \n"); fflush(stdout);
+  free(Fmi);
+
+  printf("here 10 i \n"); fflush(stdout);
+  free(DMLi); 
+
+  printf("here 10 j \n"); fflush(stdout);
+  free(DMLi1);
+  printf("here 10 k \n"); fflush(stdout);
+  free(DMLi2);
+
+  printf("here 10 l \n"); fflush(stdout);
   init_length=0;
 }
 
