@@ -153,7 +153,7 @@ void free_arrays(void)
 {
 
   printf("here 10 0 \n"); fflush(stdout);
-  // free(indx); 
+  free(indx); 
   printf("here 10 a \n"); fflush(stdout);
   free(c); 
   printf("here 10 b \n"); fflush(stdout);
