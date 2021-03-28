@@ -169,7 +169,7 @@ void doRNAupAndReverse(char * evenString, char * oddString, int location, double
 	n2 = strlen(stringOdd);
 			
 			
-	printf("Sending to perform2... ");
+	// printf("Sending to perform2... ");
 	// printMilliSecs();
 
 	perform2(stringEven, stringOdd, location, rnaupCollections, rnaupOut1);
